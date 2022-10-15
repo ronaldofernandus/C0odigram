@@ -66,7 +66,7 @@ const DetailPost = () => {
               src={
                 image
                   ? require(`../../../../images/${image}`)
-                  : "https://mdbcdn.b-cdn.net/img/new/avatars/18.webp"
+                  : "https://via.placeholder.com/150"
               }
               className=""
               alt="..."
@@ -80,7 +80,7 @@ const DetailPost = () => {
                   src={
                     userData
                       ? require(`../../../../images/${userData}`)
-                      : "https://mdbcdn.b-cdn.net/img/new/avatars/18.webp"
+                      : "https://via.placeholder.com/150"
                   }
                   className="rounded-full drop-shadow-lg w-12 h-12 md:w-14"
                   alt="Avatar"
