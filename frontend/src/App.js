@@ -10,9 +10,7 @@ function App() {
         <div className="text-center">
           <Routes>
             {/* Home */}
-            <Route path="/" element={<MainContent />}>
-              
-            </Route>
+            <Route path="/" element={<MainContent />}></Route>
 
             {/* Profile */}
             <Route path="profile" >
@@ -35,7 +33,8 @@ function App() {
             </Route>
 
             {/* search */}
-           
+            <Route path="/search/:query" element={<Search />} />
+
             {/* Register */}
             <Route path="register" element={<Register />}></Route>
 
