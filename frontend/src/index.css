@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: ; */
+  /* position: relative; */
+}
+
+.name-app {
+  font-family: "Kaushan Script", cursive;
+}
+
+.codigram {
+  font-family: "Kaushan Script", cursive;
+}
+
+.font-title {
+  font-family: Imported;
+  src: url("./font/FontsFree-Net-Billabong.ttf");
+}
+
+#root {
+  font-family: Imported;
+}
+.caption::placeholder {
+  color: rgb(255, 255, 255);
+}
