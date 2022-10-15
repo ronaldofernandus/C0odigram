@@ -11,6 +11,7 @@ import { logout } from "../../features/auth/authAction";
 import { reset } from "../../features/auth/authSlice";
 import Swal from "sweetalert2";
 import { CgProfile } from "react-icons/cg";
+import MainContent from "../MainContent";
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -59,18 +60,15 @@ const Navbar = () => {
         <h1 className="font-title font-bold text-xl drop-shadow-md md:text-2xl lg:text-4xl">
           Codigram
         </h1>
-
-        <HiOutlineSearch
-          style={{
-            marginLeft: "1.2rem",
-            marginTop: "-0.1rem",
-            position: "absolute",
-          }}
-          className="text-gray-400 text-xs md:text-sm mr-44 md:mr-[350px] lg:mr-[305px]"
-          size="1.5em"
-          
-        />
-       
+        <div>
+          <input
+            type="search"
+            className="w-24 text-sm rounded p-1 pl-7 mx-3 text-black bg-white bg-clip-padding border border-gray-300 focus:outline-none dark:bg-slate-800 dark:border-gray-700 dark:text-white md:pl-9 md:p-1.5 md:w-64"
+            placeholder="Search"
+            onClick={() => navigate(`/home/search/${searchQuery}`)}
+          />
+        </div>
+        {searchQuery && <MainContent setSearchQuery={setSearchQuery} />}
 
         <div className="text-2xl flex items-center ">
           {user ? (
