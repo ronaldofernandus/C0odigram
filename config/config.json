@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "codigram",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "swnylpdsoiehds",
+    "password": "2b8bc7c4860ed852cb6da3aeeae40f9a04702d0e36cbb3204b6958b3ae6d5466",
+    "database": "db0mdc67455vdj",
+    "host": "ec2-52-70-45-163.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectedUnauthorized": false
+      }
+    }
+  }
+}
