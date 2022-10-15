@@ -24,7 +24,7 @@ const authentication = (req, res, next) => {
 };
 
 const authorization = async (req, res, next) => {
-  console.log("Authorization checked!")
+  console.log("Authorization checked!");
   try {
     const postId = +req.params.id;
     const userId = req.userData.id;
@@ -40,9 +40,9 @@ const authorization = async (req, res, next) => {
     } else if (foundPost.UserId !== userId) {
       res.status(404).json({
         message: "not authorized!",
-      })
+      });
     } else {
-      next()
+      next();
     }
   } catch (error) {
     res.status(500).json({ message: error });
@@ -76,5 +76,6 @@ const authorization = async (req, res, next) => {
 // };
 
 module.exports = {
-  authentication,authorization
+  authentication,
+  authorization,
 };

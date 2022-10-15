@@ -23,7 +23,7 @@ const Gallery = ({ gallery, imageId }) => {
         <img
           src={
             gallery
-              ? require(`../../../../images/${gallery}`)
+              ? require(`../../../../backend/images/${gallery}`)
               : "https://via.placeholder.com/150"
           }
           className="bg-slate-200 p-0.5 dark:border-none dark:bg-indigo-200  w-full h-28 md:w-[300px] md:h-[200px]"

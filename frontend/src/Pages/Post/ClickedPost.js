@@ -42,7 +42,7 @@ const ClickedPost = () => {
             <img
               src={
                 image
-                  ? require(`../../../../images/${image}`)
+                  ? require(`../../../../backend/images/${image}`)
                   : "https://mdbcdn.b-cdn.net/img/new/avatars/18.webp"
               }
               className=""

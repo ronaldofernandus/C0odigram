@@ -65,7 +65,7 @@ const Search = () => {
                             src={
                               !post.User.image
                                 ? "https://via.placeholder.com/150"
-                                : require(`../../../images/${post.User.image}`)
+                                : require(`../../../backend/images/${post.User.image}`)
                             }
                             className="rounded-full drop-shadow-lg bg-no-repeat bg-cover w-10 h-9 md:w-14 md:h-14"
                             alt="Avatar"
@@ -98,7 +98,7 @@ const Search = () => {
                           src={
                             !post.image
                               ? "https://via.placeholder.com/150"
-                              : require(`../../../images/${post.image}`)
+                              : require(`../../../backend/images/${post.image}`)
                           }
                           className="bg-no-repeat bg-cover"
                           alt="..."
