@@ -17,12 +17,17 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const { user, isLoading, isError, isSuccess, message } =
-    useSelector((state) => state.auth);
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth
+  );
 
   useEffect(() => {
     if (isError) {
-      Swal.fire("User is not found", "Enter correct email and password", "error");
+      Swal.fire(
+        "User is not found",
+        "Enter correct email and password",
+        "error"
+      );
     }
 
     if (isSuccess && user) {
@@ -41,17 +46,15 @@ const Login = () => {
         icon: "success",
         title: "Signed in successfully",
       });
-      navigate("/");
+      navigate("/home/content");
     }
 
     dispatch(reset());
   }, [user, isError, isSuccess, message, navigate, dispatch]);
-  
-  
-  useEffect(() => {
-    user && navigate('/') 
-  }, [user,navigate])
 
+  useEffect(() => {
+    user && navigate("/home/content");
+  }, [user, navigate]);
 
   const submitHandler = (e) => {
     dispatch(login(formData));
@@ -63,9 +66,7 @@ const Login = () => {
 
   return (
     <section className="flex justify-center items-center m-4 md:m-10 lg:m-20">
-
       <div className="flex flex-col h-[500px] w-screen mx-auto p-8 bg-gradient-to-r from-indigo-400 to-blue-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-blue-800 rounded-lg text-justify items-center justify-center md:w-[500px] xl:w-5/12">
-        
         <div className="m-2">
           <h2 className="text-white font-bold mb-6 text-6xl text-center md:text-start ">
             <span className="codigram drop-shadow-lg">Codigram</span>

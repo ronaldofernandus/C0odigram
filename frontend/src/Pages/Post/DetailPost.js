@@ -43,7 +43,7 @@ const DetailPost = () => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your file has been deleted.", "success");
         dispatch(deletePost(+id));
-        navigate("/profile");
+        navigate("/home/profile");
         dispatch(resetPost());
         dispatch(reset());
       }

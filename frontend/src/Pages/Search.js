@@ -6,7 +6,9 @@ import { getPosts } from "../features/post/postAction";
 
 import { Link } from "react-router-dom";
 
-const Search = (setSearchQuery) => {
+const Search = () => {
+  const { search } = useParams();
+
   const { user } = useSelector((state) => state.auth);
   const { posts, isLoading, isError, message } = useSelector(
     (state) => state.posts
@@ -42,7 +44,7 @@ const Search = (setSearchQuery) => {
         {posts ? (
           posts
             .filter((post) => {
-              if (setSearchQuery === "") {
+              if (search === "") {
                 return post;
               } else if (post.name) {
                 return post;

@@ -19,7 +19,7 @@ const Gallery = ({ gallery, imageId }) => {
 
   return (
     <div className="">
-      <Link to={`/detail/${imageId}`}>
+      <Link to={`/home/detail/${imageId}`}>
         <img
           src={
             gallery

@@ -1,8 +1,6 @@
-import Navbar from './Navbar/Navbar'
-import MainContent from './MainContent'
-import Loading from './Loading'
+import Navbar from "./Navbar/Navbar";
+import Loading from "./Loading";
+import RouteContent from "./RouteContent";
+import MainContent from "./MainContent";
 
-
-export {
-  Navbar, MainContent, Loading
-}
+export { Navbar, MainContent, Loading, RouteContent };

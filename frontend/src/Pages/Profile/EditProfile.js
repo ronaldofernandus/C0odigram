@@ -44,7 +44,7 @@ const EditProfile = () => {
         title: "Berhasil Edit Profile!",
         text: `Anda sudah sukses update profile!`,
       });
-      navigate("/profile");
+      navigate("/home/profile");
     }
   };
 

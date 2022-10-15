@@ -57,7 +57,7 @@ const MyProfile = () => {
           {modalOpen && <AddPost setOpenModal={setModalOpen} />}
 
           <div className="mb-3 px-3 py-2 rounded-md text-sm md:text-md lg:text-base bg-slate-50 hover:bg-slate-200 text-indigo-700">
-            <Link to={`/profile/edit`}>Edit Profile</Link>
+            <Link to={`/home/profile/edit`}>Edit Profile</Link>
           </div>
         </div>
       </div>

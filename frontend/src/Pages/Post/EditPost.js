@@ -21,7 +21,7 @@ const EditPost = ({ setOpenModal, postId, postImage }) => {
   const editHandler = () => {
     dispatch(editPost(form));
 
-    navigate(`/detail/${postId}`);
+    navigate(`/home/detail/${postId}`);
   };
 
   return (

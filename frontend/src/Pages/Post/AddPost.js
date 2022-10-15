@@ -40,7 +40,7 @@ const AddPost = ({ setOpenModal }) => {
         title: "Add Post Success!",
         text: `You've successfully created an post!`,
       });
-      navigate("/profile");
+      navigate("/home/profile");
     }
   };
 
