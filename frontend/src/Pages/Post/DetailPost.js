@@ -65,7 +65,7 @@ const DetailPost = () => {
             <img
               src={
                 image
-                  ? require(`../../../../backend/images/${image}`)
+                  ? require(`../../../../images/${image}`)
                   : "https://via.placeholder.com/150"
               }
               className=""
@@ -79,7 +79,7 @@ const DetailPost = () => {
                 <img
                   src={
                     userData
-                      ? require(`../../../../backend/images/${userData}`)
+                      ? require(`../../../../images/${userData}`)
                       : "https://via.placeholder.com/150"
                   }
                   className="rounded-full drop-shadow-lg w-12 h-12 md:w-14"

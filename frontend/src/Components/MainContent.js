@@ -51,7 +51,7 @@ const MainContent = () => {
                         src={
                           !post.User.image
                             ? "https://via.placeholder.com/150"
-                            : require(`../../../backend/images/${post.User.image}`)
+                            : require(`../../../images/${post.User.image}`)
                         }
                         className="rounded-full drop-shadow-lg bg-no-repeat bg-cover w-10 h-9 md:w-14 md:h-14"
                         alt="Avatar"
@@ -81,7 +81,7 @@ const MainContent = () => {
                       src={
                         !post.image
                           ? "https://via.placeholder.com/150"
-                          : require(`../../../backend/images/${post.image}`)
+                          : require(`../../../images/${post.image}`)
                       }
                       className="bg-no-repeat bg-cover"
                       alt="..."

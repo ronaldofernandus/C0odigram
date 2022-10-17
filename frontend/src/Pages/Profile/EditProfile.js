@@ -84,7 +84,7 @@ const EditProfile = () => {
           <img
             src={
               userData.image
-                ? require(`../../../../backend/images/${userData.image}`)
+                ? require(`../../../../images/${userData.image}`)
                 : "https://via.placeholder.com/150"
             }
             className="rounded-full drop-shadow-lg h-44 w-44"

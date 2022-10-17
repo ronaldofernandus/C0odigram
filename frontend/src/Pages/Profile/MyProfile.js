@@ -27,7 +27,7 @@ const MyProfile = () => {
           <img
             src={
               userData.image
-                ? require(`../../../../backend/images/${userData.image}`)
+                ? require(`../../../../images/${userData.image}`)
                 : "https://via.placeholder.com/150"
             }
             className="rounded-full drop-shadow-lg bg-no-repeat bg-cover w-40 h-40"
